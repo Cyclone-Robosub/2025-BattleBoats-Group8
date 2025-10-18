@@ -11,7 +11,7 @@
 #define IN3_PIN 6
 #define IN4_PIN 7
 #define ENA_PIN 10   // Pin must support PWM!
-#define ENB_PIN 111  // Pin must support PWM!
+#define ENB_PIN 11  // Pin must support PWM!
 
 // ==============================
 //         Motor Control
