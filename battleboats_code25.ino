@@ -9,6 +9,8 @@ const int directionPin = 9;
 void setup() {
   Serial.begin(9600);
   // initialize motor and ultrasonics
+  pinMode(directionPin, INPUT);
+  pinMode(powerPin, INPUT);
   motorInit();
   ultrasonicInit();
 }
@@ -16,7 +18,7 @@ void setup() {
 void loop() {
   // start when powerPin = HIGH
   int powerReading = digitalRead(powerPin); // read the powerPin
-  int directionReading = digitalRead(directionPin) // read the directionPin
+  int directionReading = digitalRead(directionPin); // read the directionPin
 
   while (powerReading != LOW) {
 
